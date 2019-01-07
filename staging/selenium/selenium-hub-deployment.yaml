@@ -19,9 +19,9 @@ spec:
         image: selenium/hub:3.11
         env:
           - name: NODE_MAX_SESSION
-            value: 20
+            value: "20"
           - name: NODE_MAX_INSTANCES
-            value: 20
+            value: "20"
         ports:
           - containerPort: 4444
         resources:
