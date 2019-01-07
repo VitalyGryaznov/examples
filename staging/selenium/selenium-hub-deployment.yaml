@@ -23,7 +23,10 @@ spec:
           - name: NODE_MAX_INSTANCES
             value: 20
         ports:
-          containerPort: 4444
+          [{
+                    "port": 4444,
+                    "targetPort": 4444
+                  }],
         resources:
           limits:
             memory: "1000Mi"
